@@ -8,7 +8,10 @@ function realPic(){
   const id = random(10000, 70000);
   return `https://whichfaceisreal.blob.core.windows.net/public/realimages/${id}.jpeg`;
 }
-const fakePic = "https://thispersondoesnotexist.com/"
+function fakePic(){
+  const id = random(10000, 70000);
+  return "https://thispersondoesnotexist.com?random="+id
+}
 
 function game() {
   
@@ -49,7 +52,7 @@ function game() {
     for (const isReal of arr) {
       // create img from each loop
       const img = document.createElement("img");
-      img.src = isReal ? realPic() : fakePic;
+      img.src = isReal ? realPic() : fakePic();
       img.onclick = function() {
         // make {imagesCon} non clickable to prevent cheating
         imagesCon.style.pointerEvents = "none"
