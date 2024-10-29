@@ -1,0 +1,33 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  user-select: none;
+}
+
+#images {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#images img {
+  width: 40%;
+  cursor: pointer;
+  overflow: hidden; /* Hide overflow */
+  clip-path: inset(0 0 15px 0); /* Adjust bottom cut */
+}
+
+#logo {
+  height: 50%;
+  max-height: 150px;
+  min-height:50px;
+}
+
