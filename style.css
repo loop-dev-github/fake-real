@@ -9,6 +9,7 @@ body {
   margin: 0;
   overflow: hidden;
   user-select: none;
+  font-size: 3rem;
 }
 
 #images {
@@ -27,7 +28,7 @@ body {
 
 #logo {
   height: 50%;
-  max-height: 150px;
-  min-height:50px;
+  max-height: 250px;
+  min-height:100px;
 }
 
